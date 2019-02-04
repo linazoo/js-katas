@@ -4,8 +4,9 @@
       last( 1,2,3,4 )  => 4
 */
 
-const last = () => {
-  // solution here
+const last = (...args) => {
+  var newary = [].concat(...args);
+  return newary.pop();
 };
 
 module.exports = last;

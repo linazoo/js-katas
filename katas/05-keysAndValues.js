@@ -4,8 +4,10 @@
     keysAndValues({firstName: "Foo", lastName: "Bar"}) => [["firstName", "lastName"], ["Foo", "Bar"]]
 */
 
-const keysAndValues = () => {
-  // Solution Here
+const keysAndValues = (obj) => {
+  var keys = Object.keys(obj);
+  var values = Object.values(obj);
+  return [ keys, values ];
 };
 
 module.exports = keysAndValues;

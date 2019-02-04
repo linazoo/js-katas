@@ -3,8 +3,8 @@
     convert([1, 2, 3], [4, 5, 6]) => [1,2,3,4,5,6]
 */
 
-const combine = () => {
-  // Solution Here
+const combine = (...args) => {
+  return [].concat(...args);
 };
 
 module.exports = combine;
